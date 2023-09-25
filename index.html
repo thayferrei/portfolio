@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/devthay.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Skills</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars"  onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Web / Visual Designer</p>
+            <h1>Hi, I'm<br><span>Thay</span> Barbosa</h1>
+        </div>
+    </div>
+</div>
+<!-- -----------about---------- -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img class="Me" src="images/photo.png">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>I am a dedicated Web and Visual Designer with a strong eye for aesthetics and a commitment to creating user-centered digital solutions. I thrive on transforming ideas into visually compelling and user-friendly experiences that leave a lasting impression.</p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>UI / UX</span><br>Designing Web/App interfaces</li>
+                        <li><span>Web Development</span><br>Web app Development</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>2021 - Current</span><br>Freelancer</li>
+                        <li><span>2022 - 2023</span><br>Applications Technician at AMS Workplace.</li>
+                        <li><span>2019 - 2020</span><br>Copywriter at The RealReal.</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2023</span><br>Professional Front-End Development Certificate from Coursera</li>
+                        <li><span>2023</span><br>Professional UX Design Certificate from Coursera</li>
+                        <li><span>2023</span><br>Professional Web Design: Strategy and Information Architecture Certificate from Coursera</li>
+                        <li><span>2016</span><br>Associate's Degree from Bergen County College.</li>
+                        <li><span>2012</span><br>High School Diploma from Technology High School.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ---------services---------------- -->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Skills</h1>
+        <div class="services-list">
+            <div>
+                <i class="fas fa-code"></i>
+                <h2>Web Design</h2>
+                <p>Foundational skills in HTML, CSS, JavaScript, and Bootsrap allowing me to create and style web pages. I'm proficient in responsive design, ensuring websites adapt seamlessly across various devices. My grasp of basic graphic design enables me to create or modify images for the web.</p>
+            </div>
+            <div>
+                <i class="fas fa-crop-alt"></i>
+                <h2>UI/UX Design</h2>
+                <p>Fundamental understanding of user experience (UX) and user interface (UI) design principles, focusing on creating intuitive and visually appealing interfaces. My proficiency includes wireframing and prototyping to plan out layouts and functionality effectively. I'm adept at using tools like Adobe XD, Sketch, or Figma for designing and prototyping.</p>
+            </div>
+            <div>
+                <i class="fab fa-app-store"></i>
+                <h2>App Design</h2>
+                <p>Skilled in creating intuitive and engaging interfaces for mobile platforms. My proficiency includes wireframing and prototyping to effectively plan out app layouts and functionality. Adept at using design tools like Adobe XD, Sketch, or Figma for creating and iterating on app designs. Additionally, I have a basic understanding of front-end development technologies like HTML, CSS, and may have some familiarity with frameworks like React Native.</p>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ----------portfolio------------ -->
+ <div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+         <!-- <div class="work-list">
+            <div class="work">
+                <img src="images/Miro.png">
+                <div class="layer">
+                    <h3>Responsive Sign-Up Newsletter </h3>
+                    <p>This mock design would allow you to sign up using an email and recieve newsletters.</p>
+                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+                <div class="work">
+                <img src="images/Casa Luna UI App Design.png">
+                <div class="layer">
+                    <h3>iOS Shopping App Design</h3>
+                    <p>The app would allow users to shop, heart items, check account details, and live chat with a customer support member.</p>
+                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+                <div class="work">
+                <img src="images/Interior Design Landing Page.png">
+                <div class="layer">
+                    <h3>Interior Design Business Landing Page Design</h3>
+                    <p>This web design would allow users to view a business's work portfolio, start a project, and get in contact with customer support.</p>
+                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+                <div class="work">
+                    <img src="images/Bon Voyage Landing Page Design.png">
+                    <div class="layer">
+                        <h3>Travel Business Landing Page Design</h3>
+                        <p>This web design would allow users to view hotels, flights, and use booking services with the travel company.</p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/Scout Real Estate.png">
+                    <div class="layer">
+                        <h3>Brochure Design</h3>
+                        <p>Graphic design ad brochure for a construction business.</p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        - <a href="#" class="btn">See more</a> --->
+    
+        
+
+
+    <!-- UPDATED CODE BELOW: -->
+    <div class="portfolio-container">
+        <div class="portfolio-item">
+            <img src="images/Miro.png" alt="Project 1">
+            <div class="layer">
+            <div class="item-info">
+                <h3>Miro</h3>
+                <p>Responsive mock<br>sign-up newsletter.</p>
+                <a href="https://thayferrei.github.io/Responsive-Animation-Website/"><i class="fas fa-external-link-alt"></i></a>
+                <!-- <a href="https://thayferrei.github.io/Responsive-Animation-Website/">View Here</a> -->
+            </div>
+         </div>
+    </div>
+        <div class="portfolio-item">
+            <img src="images/Casa Luna UI App Design.png" alt="Project 2">
+            <div class="item-info">
+                <h3>Casa Luna</h3>
+                <p>iOS e-commerce app design.</p>
+                <a href="https://xd.adobe.com/view/5cb1e964-df39-494b-aad1-a0219400e7af-09e2/"><i class="fas fa-external-link-alt"></i></a>
+                <!-- <a href="project2.html">View Details</a> -->
+            </div>
+        </div>
+        <div class="portfolio-item">
+            <img src="images/Interior Design Landing Page.png" alt="Project 3">
+            <div class="item-info">
+                <h3>Design</h3>
+                <p>Interior&nbsp;design business landing page.</p>
+                <a href="https://thayferrei.github.io/LandingPage/"><i class="fas fa-external-link-alt"></i></a>
+                <!-- <a href="project3.html">View Details</a> -->
+            </div>
+        </div>
+        <div class="portfolio-item">
+            <img src="images/Bon Voyage Landing Page Design.png" alt="Project 3">
+            <div class="item-info">
+                <h3>Bon Voyage</h3>
+                <p>Travel business landing page design.</p>
+                <a href="https://www.figma.com/file/56w5o1TK99kJo9BqlmmtVr/Bon-Voyage?node-id=0%3A1"><i class="fas fa-external-link-alt"></i></a>
+                <!-- <a href="project3.html">View Details</a> -->
+            </div>
+        </div>
+        <div class="portfolio-item">
+            <img src="images/Scout Real Estate.png" alt="Project 3">
+            <div class="item-info">
+                <h3>Scout Real Estate</h3>
+                <p>Real estate company brochure design.</p>
+                <a href="https://www.canva.com/design/DAFvAsjO9J0/5ZVtmFOOxuIwXF_fkPsaEw/view?utm_content=DAFvAsjO9J0&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink"><i class="fas fa-external-link-alt"></i></a>
+                <!-- <a href="project3.html">View Details</a> -->
+            </div>
+        </div>
+        <!-- Add more portfolio items as needed -->
+    </div>
+        <script src="script.js"></script>
+    </div>
+</div>
+<!-- ----------contact------------- -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fas fa-paper-plane"></i>tbarbosaa97@gmail.com</p>
+                <div class="social-icons">
+                    <a href="https://github.com/thayferrei"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/thaynnara-barbosa-95bab899/"><i class="fab fa-linkedin"></i></a>
+                </div>
+                <a href="images/resume.otta.pdf" download class="btn btn2">Download Resume</a>
+            </div>
+            <div class="contact-right">
+                 <!-- <form name="submit-to-gmail"> -->
+                    <form action="https://formsubmit.co/5be34c7b68442fa4221048b539a042d0" method="POST">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message" required></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+            <script src="https://smtpjs.com/v3/smtp.js"></script>
+        </div>
+    </div>
+    </script>
+    <script src="script.js"></script>
+    <div class="copyright">
+        <p>Copyright © DevThay</p>
+    </div>
+</div>
+
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+
+<script>
+
+    var sidemeu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemeu.style.right = "0";
+    }
+    function closemenu(){
+        sidemeu.style.right = "-200px";
+    }
+
+</script>
+<!-- <script>
+    const scriptURL = '< add you own link here >' // add your own app script link here
+    const form = document.forms['submit-to-gmail']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script> -->
+</body>
+</html>
